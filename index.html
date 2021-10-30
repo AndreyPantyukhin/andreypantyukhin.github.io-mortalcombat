@@ -8,22 +8,72 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header class="header">
-        <a href="/" class="logo">
-            <img src="/img/logo.svg.svg" alt="Логотип: КиноПульс" class="logo-img">
-        </a>
-        <a href="#" class="user">
-            <span class="user-name">
-                Андрей
-            </span>
-            <img src="/img/islands-300.png" alt="Аватарка" class="user-photo">
-        </a>
-    </header>
-    
+    <div class="app" id="app">
+        <header class="header">
+            <a href="/" class="logo">
+                <img src="/img/logo.svg.svg" alt="Логотип: КиноПульс" class="logo-img">
+            </a>
+            <a href="#" class="user">
+                <span class="user-name">
+                    Андрей
+                </span>
+                <img src="/img/islands-300.png" alt="Аватарка" class="user-photo">
+            </a>
+        </header>
+        <section class="film">
+            <img src="/img/film-logo.png" alt="Mortal Combat" class="film-logo">
+            <div class="tags">
+                <span class="date">
+                    2021
+                </span>
+                <span class="genre">
+                    боевик, фэнтези, фантастика
+                </span>
+                <span class="country">
+                    США
+                </span>
+                <span class="age">
+                    18+
+                </span>
+            </div>
+            <!-- /.tags -->
+            <p class="description">
+                Продолжение легендарного фильма из&nbsp;90-х. Предстоит по-настоящему смертельная битва, где останется только сильнейший
+            </p>
+            <!-- /.description -->
+            <div class="button-group">
+                <button class="button button-primary" data-fancybox data-src="#dialog-content">
+                    Предзаказ фильма
+                </button>
+                <div id="dialog-content" style="display:none;" class="modal">
+                    <h2 class="modal-title">Заполните email</h2>
+                    <p class="modal-box">
+                      <input type="text" value="See if changes remain after closing the dialog" class="modal-text"/>
+                    </p>
+                </div>
+                <a href="https://www.youtube.com/watch?v=1ar_V1_uatA" data-fancybox class="button button-default">
+                    <img src="/img/Vector.svg" alt="icon: play" class="button-icon">
+                    <span class="button-text">
+                        Смотреть трейлер
+                    </span>
+                </a>
+            </div>
+            <!-- /.button-group -->
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.vide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script> 
+    <script src="js/main.js"></script>
 </body>
 </html>
