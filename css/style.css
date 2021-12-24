@@ -123,7 +123,7 @@ a {
 
 .modal-text {
     background-color: black;
-    box-shadow: black;
+    box-shadow: 10px 5px 5px black;
     color: white;
 }
 
@@ -131,7 +131,7 @@ a {
     .app {
         height: auto;
         padding-bottom: 400px;
-        background: url("/img/cover-image.png") no-repeat bottom center / 300px;
+        background: url("img/cover-image.png") no-repeat bottom center / 300px;
     }
 
     video {
